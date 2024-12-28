@@ -1,2 +1,2 @@
 # landing-page
-First actual website
+First actual webpage
