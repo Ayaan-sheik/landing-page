@@ -225,3 +225,163 @@ img{
     height:75px;
     width:auto;
 }
+
+/* Base styles remain the same as provided */
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+/* Default padding for larger screens */
+.header,.intro,.content,
+.outro,.signup-section,.footer{
+    padding: 0 200px;
+}
+
+/* Rest of the original CSS remains the same until the media queries */
+
+/* Media Query for Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .header,.intro,.content,
+    .outro,.signup-section,.footer{
+        padding: 0 50px;
+    }
+
+    .outro {
+        padding: 50px 100px;
+    }
+
+    .box {
+        gap: 100px;
+        padding: 20px 80px;
+    }
+
+    .hero-content {
+        max-width: 60%;
+    }
+
+    .image img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .header,.intro,.content,
+    .outro,.signup-section,.footer{
+        padding: 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-main {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .image {
+        margin: 20px 0;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .outro {
+        padding: 30px 20px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .box {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box div {
+        align-items: center;
+    }
+
+    .images {
+        gap: 20px;
+    }
+
+    .boxes {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .boxes img {
+        width: 150px;
+        height: 150px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Media Query for Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero-main {
+        font-size: 28px;
+    }
+
+    .hero-subtext {
+        font-size: 16px;
+    }
+
+    .info-header {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .boxes img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
+
+/* Fix for logo image responsiveness */
+.logo img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+}
